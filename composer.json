@@ -1,7 +1,8 @@
 {
-  "name": "yourusername/vscode-sample-extension",
-  "description": "A sample VS Code extension project (Node.js) with Composer metadata for demonstration.",
+  "name": "yourvendorname/sample-craft-plugin",
+  "description": "A simple Craft CMS plugin that adds a sample feature.",
   "type": "craft-plugin",
+  "version": "1.0.0",
   "license": "MIT",
   "authors": [
     {
@@ -10,16 +11,25 @@
     }
   ],
   "require": {
-    "php": ">=7.4"
+    "craftcms/cms": "^4.0"
   },
   "autoload": {
     "psr-4": {
-      "SampleExtension\\": "src/"
+      "yourvendorname\\samplecraftplugin\\": "src/"
     }
   },
-  "scripts": {
-    "post-install-cmd": [
-      "echo 'VSCode Sample Extension setup complete!'"
-    ]
+  "extra": {
+    "handle": "sample-craft-plugin",
+    "name": "Sample Craft Plugin",
+    "version": "1.0.0",
+    "schemaVersion": "1.0.0",
+    "hasCpSettings": false,
+    "hasCpSection": false,
+    "changelogUrl": "https://github.com/yourvendorname/sample-craft-plugin/CHANGELOG.md",
+    "class": "yourvendorname\\samplecraftplugin\\Plugin"
+  },
+  "support": {
+    "issues": "https://github.com/yourvendorname/sample-craft-plugin/issues",
+    "source": "https://github.com/yourvendorname/sample-craft-plugin"
   }
 }
