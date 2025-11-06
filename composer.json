@@ -1,7 +1,7 @@
 {
   "name": "yourusername/vscode-sample-extension",
   "description": "A sample VS Code extension project (Node.js) with Composer metadata for demonstration.",
-  "type": "project",
+  "type": "craft-plugin",
   "license": "MIT",
   "authors": [
     {
