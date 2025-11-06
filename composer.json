@@ -1,0 +1,25 @@
+{
+  "name": "yourusername/vscode-sample-extension",
+  "description": "A sample VS Code extension project (Node.js) with Composer metadata for demonstration.",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Your Name",
+      "email": "your.email@example.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "SampleExtension\\": "src/"
+    }
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "echo 'VSCode Sample Extension setup complete!'"
+    ]
+  }
+}
