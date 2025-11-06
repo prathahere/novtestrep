@@ -1,0 +1,26 @@
+{
+  "name": "vscode-sample-extension",
+  "displayName": "VSCode Sample Extension",
+  "description": "A simple VS Code extension that shows a Hello World message.",
+  "version": "1.0.0",
+  "publisher": "yourusername",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": ["onCommand:sampleExtension.helloWorld"],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "sampleExtension.helloWorld",
+        "title": "Hello from Sample Extension"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "test": "echo \"No tests yet\""
+  },
+  "keywords": ["vscode", "extension", "sample"]
+}
